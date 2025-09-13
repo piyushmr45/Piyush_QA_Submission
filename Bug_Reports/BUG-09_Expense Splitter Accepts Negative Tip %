@@ -1,0 +1,20 @@
+BUG-09: Accepts Negative "Tip %"
+
+Severity: Medium
+
+Environment: Windows 11, Chrome Browser
+
+Steps to Reproduce (STR):
+
+1)Navigate to the "Expense Splitter."
+
+2)Enter -10 for "Tip %."
+
+3)Click "Calculate."
+
+Expected Result: An error message like "Tip percentage cannot be negative" should be displayed.
+
+Actual Result: The app accepts the negative value and incorrectly calculates a discounted total.
+
+Evidence: 
+ ![Screenshot showing accept negative tip](evidence\bug-09-negative-tip.png)

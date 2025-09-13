@@ -1,0 +1,20 @@
+BUG-06: Incorrect Calculation with Decimal Input
+
+Severity: High
+
+Environment: Windows 11, Chrome Browser
+
+Steps to Reproduce (STR):
+
+1)Navigate to the "Expense Splitter."
+
+2)Enter 1000 for "Total Amount" and 2.5 for "People."
+
+3)Click "Calculate."
+
+Expected Result: The field should reject decimals, or the calculation should be correct (₹400).
+
+Actual Result: The app accepts the decimal and calculates an incorrect result of ₹500.
+
+Evidence:
+ ![Screenshot showing Incorrect Calculation with decimal point](evidence\bug-06-decimal-people-input.png)

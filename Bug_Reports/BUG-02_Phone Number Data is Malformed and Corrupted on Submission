@@ -1,0 +1,23 @@
+BUG-02: Phone Number Data is Malformed
+
+Severity: High
+
+Environment: Windows 11, Chrome Browser
+
+Steps to Reproduce (STR):
+
+1)Navigate to the "Sign-up & Profile Wizard."
+
+2)Fill out all fields with valid information.
+
+3)In the "Phone (India)" field, enter a formatted number that includes the country code and a space, such as +91 7654192689.
+
+4)Click the "Next" button to proceed to the "Review" stage.
+
+Expected Result:
+The phone number in the "Review" JSON data should be correctly sanitized and displayed in a standard format, such as "7654192689".
+
+Actual Result: The phone number in the "Review" JSON data is malformed. The country code and space are removed, but an incorrect trailing comma is added, resulting in "7654192689,". This corrupts the user's data before submission.
+
+Evidence:
+ ![Screenshot showing phone number is malformed](evidence\bug-02-phone-number-missmatch.png)

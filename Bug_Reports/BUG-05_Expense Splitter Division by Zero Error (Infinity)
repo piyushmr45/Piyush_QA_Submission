@@ -1,0 +1,20 @@
+BUG-05: Expense Splitter Division by Zero Error
+
+Severity: High
+
+Environment: Windows 11, Chrome Browser
+
+Steps to Reproduce (STR):
+
+1)Navigate to the "Expense Splitter."
+
+2)Enter 0 in the "People" field.
+
+3)Click "Calculate."
+
+Expected Result: An error message like "People must be at least 1" should be displayed.
+
+Actual Result: The result for "Each" is displayed as ₹Infinity.
+
+Evidence: 
+ ![Screenshot showing expense splitter division](evidence\bug-05-division-error.png)

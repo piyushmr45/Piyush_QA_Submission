@@ -1,0 +1,22 @@
+BUG-01: Form Submission with Empty Required Fields
+
+Severity: High
+
+Environment: Windows 11, Chrome Browser
+
+Steps to Reproduce (STR):
+
+1)Navigate to the "Sign-up & Profile Wizard."
+
+2)Leave the "Full Name" and "Date of Birth" fields empty.
+
+3)Fill in all other fields with valid data.
+
+4)Click the "Next" button.
+
+Expected Result: The form should not proceed. An error message should appear below the empty fields.
+
+Actual Result: The form proceeds to the "Review" stage with empty values for name and dob.
+
+Evidence:
+  ![Screenshot showing the form submitted with an empty name and date of birth](evidence\bug-01-empty-fields.png)

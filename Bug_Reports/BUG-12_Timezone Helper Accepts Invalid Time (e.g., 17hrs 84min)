@@ -1,0 +1,20 @@
+BUG-12: Timezone Helper Accepts Invalid Time
+
+Severity: High
+
+Environment: Windows 11, Chrome Browser
+
+Steps to Reproduce (STR):
+
+1)Navigate to the "Timezone Helper."
+
+2)Enter an impossible time, such as 17:84.
+
+3)Click "Convert."
+
+Expected Result: An error message "Please enter a valid time" should be displayed.
+
+Actual Result: The app accepts the invalid input and performs a nonsensical calculation.
+
+Evidence: 
+ ![Screenshot showing Timezone Helper Accepts Invalid Time](evidence\bug-12-invalid-time.png)

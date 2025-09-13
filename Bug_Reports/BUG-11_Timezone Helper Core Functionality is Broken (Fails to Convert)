@@ -1,0 +1,22 @@
+BUG-11: Timezone Helper is Broken
+
+Severity: Critical
+
+Environment: Windows 11, Chrome Browser
+
+Steps to Reproduce (STR):
+
+1)Navigate to the "Timezone Helper."
+
+2)Enter any valid local date and time.
+
+3)Select any "Target Zone."
+
+4)Click "Convert."
+
+Expected Result: The converted date and time should be displayed correctly for the selected target timezone.
+
+Actual Result: The app produces an incorrect result and fails to change the timezone, leaving the output in "India Standard Time."
+
+Evidence:
+ ![Screenshot showing Timezone Helper is Broken](evidence\bug-11-timezone-broken.png)

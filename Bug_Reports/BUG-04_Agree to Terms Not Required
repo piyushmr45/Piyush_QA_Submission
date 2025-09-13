@@ -1,0 +1,20 @@
+BUG-04: "Agree to Terms" Not Required
+
+Severity: Medium
+
+Environment: Windows 11, Chrome Browser
+
+Steps to Reproduce (STR):
+
+1)Navigate to the "Sign-up & Profile Wizard."
+
+2)Fill all fields correctly but leave the "I agree to the Terms" box unchecked.
+
+3)Click "Next."
+
+Expected Result: The form should not proceed and should prompt the user to agree to the terms.
+
+Actual Result: The form proceeds to the "Review" stage.
+
+Evidence:
+ ![Screenshot showing terms and condition not required](evidence\bug-04-terms-check.png)

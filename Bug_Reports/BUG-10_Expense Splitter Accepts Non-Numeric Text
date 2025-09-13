@@ -1,0 +1,20 @@
+BUG-10: Accepts Non-Numeric Text
+
+Severity: Medium
+
+Environment: Windows 11, Chrome Browser
+
+Steps to Reproduce (STR):
+
+1)Navigate to the "Expense Splitter."
+
+2)In any numeric field, enter a single hyphen (-).
+
+3)Click "Calculate."
+
+Expected Result: An error message like "Please enter a valid number" should be displayed.
+
+Actual Result: The app fails silently by treating the input as 0 or produces an Infinity error.
+
+Evidence: 
+ ![Screenshot showing accept non-numeric text](evidence\bug-10-non-numeric.png)

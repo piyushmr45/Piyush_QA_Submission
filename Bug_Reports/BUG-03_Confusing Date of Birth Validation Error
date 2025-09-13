@@ -1,0 +1,18 @@
+BUG-03: Confusing Date of Birth Validation Error
+
+Severity: Medium
+
+Environment: Windows 11, Chrome Browser
+
+Steps to Reproduce (STR):
+
+1)Navigate to the "Sign-up & Profile Wizard."
+
+2)In the "Date of Birth" field, enter a nonsensical future year like 275760.
+
+Expected Result: A clear error like "Invalid date" or "Date cannot be in the future" should be displayed.
+
+Actual Result: A pop-up alert appears with the irrelevant message "Must be 18+."
+
+Evidence:
+ ![Screenshot showing Confusing Date of Birth](evidence\bug-03-ecced-year.png)

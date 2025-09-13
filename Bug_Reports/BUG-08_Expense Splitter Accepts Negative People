@@ -1,0 +1,20 @@
+BUG-08: Accepts Negative "People"
+
+Severity: Medium
+
+Environment: Windows 11, Chrome Browser
+
+Steps to Reproduce (STR):
+
+1)Navigate to the "Expense Splitter."
+
+2)Enter a negative number (e.g., -5) for "People."
+
+3)Click "Calculate."
+
+Expected Result: An error message like "Number of people must be positive" should be displayed.
+
+Actual Result: The app accepts the negative value and calculates a nonsensical negative result.
+
+Evidence: 
+ ![Screenshot showing negative people](evidence\bug-08-neg.-people.png)
