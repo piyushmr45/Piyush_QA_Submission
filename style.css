@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; margin: 0; padding: 0; color: #222; }
+header { padding: 16px; background: #e9f1ff; border-bottom: 1px solid #d0e2ff; }
+h1 { margin: 0 0 4px; font-size: 22px; }
+.subtitle { margin: 0 0 12px; color: #3f6ac4; } /* potential low contrast on some displays */
+nav { display: flex; gap: 8px; flex-wrap: wrap; }
+.tab-btn { border: 1px solid #aac2ff; background: #faffff; padding: 8px 10px; cursor: pointer; border-radius: 6px; }
+.tab-btn:focus { outline: none; box-shadow: 0 0 0 2px #aac2ff; }
+main { padding: 14px; }
+.tab { max-width: 720px; }
+.row { display: flex; flex-direction: column; gap: 6px; margin: 12px 0; }
+label { font-size: 14px; }
+input, select, button { padding: 10px; border: 1px solid #cdd7e1; border-radius: 6px; font-size: 14px; }
+.actions { display: flex; gap: 8px; }
+button.primary { background: #2a62f2; color: #ffffff; border-color: #2a62f2; }
+.card { margin-top: 10px; padding: 12px; border: 1px solid #e5e7eb; border-radius: 8px; background: #fcfcff; }
+.hidden { display: none; }
+pre { background: #0b0b0b; color: #a6ffb2; padding: 10px; border-radius: 6px; overflow-x: auto; }
+footer { padding: 16px; opacity: 0.65; font-size: 12px; }
+@media (max-width: 420px) {
+  nav { gap: 2px; }
+  .tab-btn { padding: 6px 6px; } /* easy to tap? maybe not */
+}
